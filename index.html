@@ -1,22 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Professional English Teacher</title>
 
-<!-- Google Fonts -->
+<title>English by Tatevik</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
+
 :root{
+
 --pink:#F8E2E2;
 --rose:#FFC2CE;
 --gold:#F6CA5B;
 --brown:#411E0D;
 --white:#ffffff;
---shadow:0 18px 40px rgba(65,30,13,0.10);
+
+--shadow:0 18px 40px rgba(65,30,13,.10);
+
 }
 
 *{
@@ -30,10 +34,12 @@ scroll-behavior:smooth;
 }
 
 body{
+
 font-family:'Inter',sans-serif;
 background:var(--pink);
 color:var(--brown);
-line-height:1.6;
+line-height:1.7;
+
 }
 
 img{
@@ -47,580 +53,978 @@ color:inherit;
 }
 
 .container{
+
 width:90%;
-max-width:1250px;
+max-width:1200px;
 margin:auto;
+
 }
 
 section{
+
 padding:90px 0;
+
 }
 
-/* HEADER */
 header{
+
 position:sticky;
 top:0;
-z-index:999;
-background:rgba(248,226,226,0.95);
+background:rgba(248,226,226,.96);
 backdrop-filter:blur(12px);
-border-bottom:1px solid rgba(65,30,13,0.08);
+z-index:1000;
+border-bottom:1px solid rgba(65,30,13,.08);
+
 }
 
 nav{
+
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 0;
-gap:20px;
+
 }
 
 .logo{
+
 font-family:'Playfair Display',serif;
 font-size:1.6rem;
 font-weight:700;
+
 }
 
 nav ul{
+
 display:flex;
+gap:30px;
 list-style:none;
-gap:28px;
-flex-wrap:wrap;
+
 }
 
 nav ul li a{
+
 font-weight:600;
-transition:0.3s;
+transition:.3s;
+
 }
 
 nav ul li a:hover{
+
 color:#8a4c2d;
+
 }
 
-/* BUTTONS */
 .btn{
+
 display:inline-block;
 padding:14px 28px;
 border-radius:50px;
 font-weight:700;
-transition:0.35s ease;
+transition:.3s;
+
 }
 
 .btn-primary{
+
 background:var(--gold);
-box-shadow:0 12px 24px rgba(246,202,91,0.35);
+
 }
 
 .btn-primary:hover{
+
 transform:translateY(-5px);
+
 }
 
 .btn-outline{
-background:var(--white);
-border:2px solid rgba(65,30,13,0.08);
+
+background:white;
+border:2px solid rgba(65,30,13,.08);
+
 }
 
 .btn-outline:hover{
-transform:translateY(-5px);
+
 background:var(--rose);
+
 }
 
-/* HERO */
 .hero{
-padding:70px 0 100px;
+
+padding:70px 0;
+
 }
 
 .hero-grid{
+
 display:grid;
-grid-template-columns:1.1fr 0.9fr;
+grid-template-columns:1.1fr .9fr;
 gap:60px;
 align-items:center;
+
 }
 
 .badge{
+
 display:inline-block;
-padding:9px 18px;
+padding:10px 20px;
 background:var(--rose);
-border-radius:50px;
-font-size:0.92rem;
+border-radius:40px;
 font-weight:700;
-margin-bottom:22px;
+margin-bottom:20px;
+
 }
 
 .hero h1{
+
 font-family:'Playfair Display',serif;
-font-size:3.6rem;
+font-size:3.8rem;
 line-height:1.1;
-margin-bottom:22px;
-max-width:650px;
+margin-bottom:25px;
+
 }
 
 .hero p{
+
 font-size:1.08rem;
-max-width:620px;
-opacity:0.92;
-margin-bottom:28px;
+margin-bottom:30px;
+
 }
 
 .hero-buttons{
+
 display:flex;
 gap:15px;
-flex-wrap:wrap;
-margin-bottom:28px;
+margin-bottom:30px;
+
 }
 
 .trust{
+
 display:grid;
 gap:10px;
 font-weight:600;
+
 }
 
 .hero-photo{
-background:linear-gradient(135deg,var(--rose),#ffeef2);
+
 padding:18px;
-border-radius:34px;
+background:linear-gradient(135deg,#FFD7DF,#FFF0F5);
+border-radius:35px;
 box-shadow:var(--shadow);
+
 }
 
 .hero-photo img{
+
 height:600px;
 width:100%;
 object-fit:cover;
 border-radius:28px;
+
 }
 
-/* SECTION TITLE */
 .title{
+
 text-align:center;
-margin-bottom:55px;
+margin-bottom:60px;
+
 }
 
 .title h2{
+
+font-size:2.7rem;
 font-family:'Playfair Display',serif;
-font-size:2.6rem;
-margin-bottom:12px;
+margin-bottom:10px;
+
 }
 
-.title p{
-opacity:0.8;
-}
-
-/* COURSES */
 .cards{
+
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:28px;
+gap:30px;
+
 }
 
 .card{
-background:var(--white);
-padding:34px;
-border-radius:28px;
-box-shadow:var(--shadow);
-transition:0.35s ease;
-}
 
-.card:hover{
-transform:translateY(-10px);
+background:white;
+padding:35px;
+border-radius:30px;
+box-shadow:var(--shadow);
+
 }
 
 .card h3{
-font-size:1.45rem;
-margin-bottom:14px;
+
+margin-bottom:15px;
+
 }
 
-.card p{
-opacity:0.85;
-margin-bottom:24px;
-min-height:90px;
-}
-
-/* ABOUT */
 .about-box{
-background:var(--white);
+
+background:white;
 padding:55px;
-border-radius:32px;
+border-radius:35px;
 box-shadow:var(--shadow);
-max-width:950px;
-margin:auto;
-text-align:center;
-font-size:1.08rem;
+
 }
 
-/* TESTIMONIALS */
+.about-box h3{
+
+font-size:2rem;
+margin-bottom:25px;
+
+}
+
+.about-box p{
+
+margin-bottom:18px;
+
+}
+
 .testimonials-grid{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+
 }
 
 .testimonial{
-background:var(--white);
-padding:30px;
-border-radius:28px;
+
+background:white;
+padding:25px;
+border-radius:25px;
 box-shadow:var(--shadow);
-transition:0.3s;
+
 }
 
-.testimonial:hover{
-transform:translateY(-8px);
+.testimonial img{
+
+border-radius:18px;
+margin-bottom:18px;
+
 }
 
-.testimonial strong{
-display:block;
-margin-top:16px;
-color:#8a4c2d;
-}
-
-/* PRICING */
 .pricing-grid{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:28px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+
 }
 
 .plan{
-background:var(--white);
-padding:36px;
-border-radius:30px;
-box-shadow:var(--shadow);
-text-align:center;
-transition:0.35s;
-}
 
-.plan:hover{
-transform:translateY(-10px);
+background:white;
+padding:40px;
+border-radius:30px;
+text-align:center;
+box-shadow:var(--shadow);
+
 }
 
 .featured{
-border:2px solid var(--gold);
+
+border:3px solid var(--gold);
+
 }
 
 .price{
-font-size:2.5rem;
+
+font-size:2.6rem;
 font-weight:800;
-margin:14px 0;
+margin:15px 0;
+
 }
 
-/* CONTACT */
 .contact-wrap{
-background:var(--white);
+
+background:white;
 padding:55px;
-border-radius:34px;
+border-radius:35px;
 box-shadow:var(--shadow);
-max-width:900px;
-margin:auto;
+
 }
 
 form{
+
 display:grid;
 gap:18px;
-margin-top:25px;
+
 }
 
-input, textarea{
-width:100%;
-padding:16px 18px;
-border:none;
-border-radius:16px;
-background:#fff8f8;
-font-family:inherit;
-font-size:1rem;
-outline:none;
-border:1px solid rgba(65,30,13,0.08);
-}
-
+input,
 textarea{
-min-height:160px;
-resize:vertical;
+
+padding:16px;
+border-radius:15px;
+border:1px solid rgba(65,30,13,.1);
+font-size:1rem;
+
 }
 
 .contact-links{
+
 display:flex;
-gap:14px;
-flex-wrap:wrap;
+gap:15px;
 margin-top:25px;
+flex-wrap:wrap;
+
 }
 
 .contact-links a{
-padding:12px 18px;
+
 background:var(--rose);
-border-radius:50px;
+padding:12px 20px;
+border-radius:30px;
 font-weight:700;
-transition:0.3s;
+
 }
 
-.contact-links a:hover{
-transform:translateY(-4px);
-}
-
-/* FOOTER */
 footer{
-padding:35px 15px;
+
 text-align:center;
-font-size:0.95rem;
-opacity:0.8;
+padding:40px;
+opacity:.8;
+
 }
 
-/* MOBILE */
-@media(max-width:980px){
+@media(max-width:900px){
+
 .hero-grid{
+
 grid-template-columns:1fr;
+
 }
 
 .hero{
-text-align:center;
-}
 
-.hero p{
-margin-left:auto;
-margin-right:auto;
+text-align:center;
+
 }
 
 .hero-buttons{
-justify-content:center;
-}
 
-.trust{
 justify-content:center;
+
 }
 
 .hero-photo img{
-height:480px;
-}
+
+height:420px;
+
 }
 
-@media(max-width:768px){
-nav{
-flex-direction:column;
 }
 
-nav ul{
-justify-content:center;
-gap:15px;
-}
-
-.hero h1{
-font-size:2.55rem;
-}
-
-.title h2{
-font-size:2rem;
-}
-
-section{
-padding:70px 0;
-}
-
-.hero-photo img{
-height:360px;
-}
-
-.about-box,
-.contact-wrap{
-padding:32px;
-}
-}
 </style>
+
 </head>
 
 <body>
 
 <header>
+
 <div class="container">
+
 <nav>
-<div class="logo">English by Tatevik</div>
+
+<div class="logo">
+
+English by Tatevik
+
+</div>
 
 <ul>
+
 <li><a href="#courses">Courses</a></li>
 <li><a href="#about">About</a></li>
-<li><a href="#reviews">Reviews</a></li>
+<li><a href="#reviews">Success Stories</a></li>
 <li><a href="#pricing">Pricing</a></li>
 <li><a href="#contact">Contact</a></li>
+
 </ul>
+
 </nav>
+
 </div>
+
 </header>
 
-<!-- HERO -->
 <section class="hero">
+
 <div class="container hero-grid">
 
 <div>
-<span class="badge">Professional English Teacher</span>
 
-<h1>Learn English with Confidence & Real Results</h1>
+<span class="badge">
+
+Professional English Teacher
+
+</span>
+
+<h1>
+
+Learn English with Confidence & Real Results
+
+</h1>
 
 <p>
-I have been teaching English for over 12 years and helping students achieve real progress.
-I hold both BA and MA degrees in English and successfully completed the prestigious CELTA certification.
-My lessons are personalized, effective, and motivating for every learner.
+
+I have been teaching English for over 12 years and helping students achieve outstanding results in General English, TOEFL Preparation, Financial English and Business English.
+
 </p>
 
 <div class="hero-buttons">
-<a href="#contact" class="btn btn-primary">Book a Free Trial</a>
-<a href="#courses" class="btn btn-outline">View Courses</a>
+
+<a href="#contact" class="btn btn-primary">
+
+Book a Free Trial
+
+</a>
+
+<a href="#courses" class="btn btn-outline">
+
+View Courses
+
+</a>
+
 </div>
 
 <div class="trust">
-<div>✔ 12+ Years Experience</div>
-<div>✔ BA & MA Qualified</div>
-<div>✔ CELTA Certified</div>
+
+<div>✔ 12+ Years Teaching Experience</div>
+
+<div>✔ BA & MA in English</div>
+
+<div>✔ Cambridge CELTA Certified</div>
+
+<div>✔ Cambridge TKT Modules 1,2,3</div>
+
 </div>
+
 </div>
 
 <div class="hero-photo">
-<img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1000&q=80" alt="English Teacher">
+
+<img src="YOURPHOTO.jpg">
+
 </div>
 
 </div>
+
 </section>
-
 <!-- COURSES -->
 <section id="courses">
+
 <div class="container">
 
 <div class="title">
+
 <h2>Courses</h2>
-<p>Elegant learning programs built for success</p>
+
+<p>Personalized English programs designed to help you achieve your goals.</p>
+
 </div>
 
 <div class="cards">
 
 <div class="card">
+
 <h3>General English</h3>
-<p>Improve speaking, grammar, vocabulary, listening, and confidence for everyday life.</p>
-<a href="#" class="btn btn-primary">Read More</a>
+
+<p>
+Develop your speaking, listening, reading, writing, grammar and vocabulary through interactive lessons designed around your individual needs and learning style.
+</p>
+
+<a href="#contact" class="btn btn-primary">Book Now</a>
+
 </div>
 
 <div class="card">
+
 <h3>TOEFL Preparation</h3>
-<p>Prepare for reading, listening, speaking, and writing with score-focused strategies.</p>
-<a href="#" class="btn btn-primary">Read More</a>
+
+<p>
+Master every section of the TOEFL exam with proven strategies, authentic practice materials, detailed feedback and score-focused preparation.
+</p>
+
+<a href="#contact" class="btn btn-primary">Book Now</a>
+
 </div>
 
 <div class="card">
+
 <h3>Financial English</h3>
-<p>Learn English for business, accounting, banking, finance, and professional communication.</p>
-<a href="#" class="btn btn-primary">Read More</a>
+
+<p>
+Improve your professional communication skills in banking, accounting, finance and international business using real-life situations.
+</p>
+
+<a href="#contact" class="btn btn-primary">Book Now</a>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 <!-- ABOUT -->
+
 <section id="about">
+
 <div class="container">
 
 <div class="title">
+
 <h2>About Me</h2>
-<p>Helping students grow with confidence</p>
+
+<p>Helping students achieve confidence and measurable results.</p>
+
 </div>
 
 <div class="about-box">
-Teaching English is not just my profession—it is my passion. I love seeing students become more confident, speak freely, and open new academic or career opportunities. Every lesson is carefully planned to make learning motivating, practical, and enjoyable.
+
+<h3>My Education & Professional Background</h3>
+
+<p>
+Hello! My name is <strong>Tatevik Sahakyan</strong>, and I have been teaching English for more than <strong>12 years</strong>. Throughout my teaching career, I have helped hundreds of students improve their English skills, achieve their target TOEFL scores, gain admission to international universities, and communicate confidently in both academic and professional environments.
+</p>
+
+<p>
+I graduated from <strong>Yerevan State University, Faculty of Romance and Germanic Philology</strong>, where I earned my Bachelor's degree in English. I later completed my <strong>Master's Degree in English</strong>, which strengthened my knowledge of language acquisition, linguistics, and modern teaching methodology.
+</p>
+
+<p>
+To provide internationally recognized teaching standards, I successfully completed the prestigious <strong>Cambridge CELTA (Certificate in English Language Teaching to Adults)</strong>. I also hold all three <strong>Cambridge Teaching Knowledge Test (TKT)</strong> certificates, covering language teaching methodology, lesson planning, classroom management and assessment.
+</p>
+
+<p>
+I specialize in:
+</p>
+
+<ul style="margin-left:25px; margin-bottom:20px; line-height:2;">
+
+<li>✔ General English</li>
+
+<li>✔ TOEFL Preparation</li>
+
+<li>✔ Financial English</li>
+
+<li>✔ Business English</li>
+
+<li>✔ Speaking Fluency</li>
+
+<li>✔ Grammar & Vocabulary Development</li>
+
+<li>✔ Academic Writing</li>
+
+</ul>
+
+<p>
+Every lesson is carefully planned according to each student's level, learning style and personal goals. I strongly believe that learning English should be practical, motivating and enjoyable. My lessons combine clear explanations, interactive practice and continuous feedback so that every student can see real progress.
+</p>
+
+<p>
+Whether you are preparing for the TOEFL exam, improving your English for work, or simply becoming a more confident speaker, I will support and guide you throughout your learning journey.
+</p>
+
 </div>
 
 </div>
+
 </section>
+<!-- STUDENT SUCCESS STORIES -->
 
-<!-- TESTIMONIALS -->
 <section id="reviews">
+
 <div class="container">
 
 <div class="title">
+
 <h2>Student Success Stories</h2>
-<p>Trusted by learners from different backgrounds</p>
+
+<p>
+I am incredibly proud of every student's achievement. Here are some of the amazing results we've accomplished together.
+</p>
+
 </div>
 
 <div class="testimonials-grid">
 
 <div class="testimonial">
-“After 2 months, I became much more confident in speaking.”
-<strong>— Anna</strong>
+
+<img src="images/toefl1.jpg" alt="TOEFL Student Result">
+
+<h3 style="margin-bottom:15px;">TOEFL Success Story</h3>
+
+<p>
+
+<strong>Student Goal:</strong> Study abroad
+
+<br><br>
+
+Starting Level:
+Intermediate (B1)
+
+<br><br>
+
+Preparation Time:
+3 Months
+
+<br><br>
+
+Final TOEFL Score:
+<strong>96/120</strong>
+
+<br><br>
+
+After following a personalized study plan, completing weekly mock tests, and receiving detailed feedback on every skill, the student exceeded the required university score and received admission to their dream university.
+
+</p>
+
+<strong style="color:#8a4c2d;">★★★★★ Excellent Progress</strong>
+
 </div>
 
 <div class="testimonial">
-“I achieved my TOEFL target score faster than expected.”
-<strong>— David</strong>
+
+<img src="images/general1.jpg" alt="General English Student">
+
+<h3 style="margin-bottom:15px;">General English Transformation</h3>
+
+<p>
+
+<strong>Student Goal:</strong> Speak English confidently at work.
+
+<br><br>
+
+Course Duration:
+6 Months
+
+<br><br>
+
+Achievements:
+
+✔ Improved speaking confidence
+
+✔ Expanded vocabulary
+
+✔ Better pronunciation
+
+✔ Fluent workplace communication
+
+<br><br>
+
+The student can now confidently communicate with international colleagues and participate in business meetings without hesitation.
+
+</p>
+
+<strong style="color:#8a4c2d;">★★★★★ Outstanding Improvement</strong>
+
 </div>
 
 <div class="testimonial">
-“Professional, kind, and highly effective lessons.”
-<strong>— Lilit</strong>
+
+<img src="images/toefl2.jpg" alt="TOEFL Score">
+
+<h3 style="margin-bottom:15px;">Fast TOEFL Improvement</h3>
+
+<p>
+
+<strong>Student Goal:</strong> Achieve the target TOEFL score quickly.
+
+<br><br>
+
+Preparation Time:
+8 Weeks
+
+<br><br>
+
+Achievements:
+
+✔ Reading improved significantly
+
+✔ Listening strategies mastered
+
+✔ Speaking confidence increased
+
+✔ Academic writing became structured and accurate
+
+<br><br>
+
+The student achieved the required score much faster than expected through intensive preparation and consistent practice.
+
+</p>
+
+<strong style="color:#8a4c2d;">★★★★★ Target Achieved</strong>
+
 </div>
 
 </div>
+
+<br><br><br>
+
+<div class="about-box">
+
+<h3 style="text-align:center;margin-bottom:30px;">
+Student Results Speak for Themselves
+</h3>
+
+<div class="cards">
+
+<div class="card">
+
+<h2 style="font-size:45px;color:#F6CA5B;">500+</h2>
+
+<h3>Students Taught</h3>
+
+<p>
+Over the past 12 years, I have successfully worked with learners of different ages, professions, and language levels.
+</p>
+
 </div>
+
+<div class="card">
+
+<h2 style="font-size:45px;color:#F6CA5B;">12+</h2>
+
+<h3>Years of Experience</h3>
+
+<p>
+Extensive experience teaching General English, TOEFL Preparation, Financial English, and Business English.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2 style="font-size:45px;color:#F6CA5B;">95%</h2>
+
+<h3>Student Satisfaction</h3>
+
+<p>
+My students consistently report increased confidence, improved communication skills, and successful exam results.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
-
 <!-- PRICING -->
+
 <section id="pricing">
+
 <div class="container">
 
 <div class="title">
+
 <h2>Pricing</h2>
-<p>Choose the right plan for your goals</p>
+
+<p>Choose the learning plan that best fits your goals.</p>
+
 </div>
 
 <div class="pricing-grid">
 
 <div class="plan">
-<h3>Single Lesson</h3>
-<div class="price">$20</div>
-<p>1 private lesson • 60 min</p>
-<a href="#contact" class="btn btn-primary">Start</a>
+
+<h3>General English</h3>
+
+<div class="price">60,000 AMD</div>
+
+<p>
+
+<strong>8 Private Lessons</strong>
+
+<br><br>
+
+✔ 60-minute lessons
+
+<br>
+
+✔ Personalized learning plan
+
+<br>
+
+✔ Speaking, Grammar & Vocabulary
+
+<br>
+
+✔ Homework & Feedback
+
+</p>
+
+<a href="#contact" class="btn btn-primary">Book Now</a>
+
 </div>
 
 <div class="plan featured">
-<h3>Popular Package</h3>
-<div class="price">$75</div>
-<p>4 lessons package • Save more</p>
-<a href="#contact" class="btn btn-primary">Start</a>
+
+<h3>TOEFL Preparation</h3>
+
+<div class="price">80,000 AMD</div>
+
+<p>
+
+<strong>8 Private Lessons</strong>
+
+<br><br>
+
+✔ Reading Strategies
+
+<br>
+
+✔ Listening Practice
+
+<br>
+
+✔ Speaking Feedback
+
+<br>
+
+✔ Writing Correction
+
+<br>
+
+✔ Full TOEFL Practice Materials
+
+</p>
+
+<a href="#contact" class="btn btn-primary">Book Now</a>
+
 </div>
 
 <div class="plan">
-<h3>Premium Intensive</h3>
-<div class="price">$180</div>
-<p>10 lessons for fast progress</p>
-<a href="#contact" class="btn btn-primary">Start</a>
+
+<h3>Single Lesson</h3>
+
+<div class="price">10,000 AMD</div>
+
+<p>
+
+<strong>1 Private Lesson</strong>
+
+<br><br>
+
+✔ 60 Minutes
+
+<br>
+
+✔ Individual Lesson
+
+<br>
+
+✔ Any English Level
+
+</p>
+
+<a href="#contact" class="btn btn-primary">Book Now</a>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 <!-- CONTACT -->
+
 <section id="contact">
+
 <div class="container">
 
 <div class="title">
+
 <h2>Contact Me</h2>
-<p>Book your free trial lesson today</p>
+
+<p>
+Ready to start your English journey? Get in touch today!
+</p>
+
 </div>
 
 <div class="contact-wrap">
 
 <form>
+
 <input type="text" placeholder="Your Name">
-<input type="email" placeholder="Your Email">
-<textarea placeholder="Tell me your goals"></textarea>
-<button class="btn btn-primary">Send Message</button>
+
+<input type="tel" placeholder="Your Phone Number">
+
+<textarea placeholder="Tell me about your goals..."></textarea>
+
+<button class="btn btn-primary">
+
+Send Message
+
+</button>
+
 </form>
 
 <div class="contact-links">
-<a href="mailto:your@email.com">Email</a>
-<a href="#">WhatsApp</a>
-<a href="#">Instagram</a>
+
+<a href="tel:+37498765436">
+📞 +374 98 765436
+</a>
+
+<a href="https://wa.me/37498765436">
+WhatsApp
+</a>
+
+<a href="https://instagram.com/yourusername">
+Instagram
+</a>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
+<!-- FOOTER -->
+
 <footer>
+
+<div class="container">
+
+<h3 style="margin-bottom:15px; font-family:'Playfair Display',serif;">
+English by Tatevik
+</h3>
+
+<p>
+
+Helping students build confidence, achieve higher TOEFL scores, and communicate successfully in English for over 12 years.
+
+</p>
+
+<br>
+
+<p>
+
 © 2026 English by Tatevik • All Rights Reserved
+
+</p>
+
+</div>
+
 </footer>
 
 </body>
+
 </html>
